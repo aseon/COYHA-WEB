@@ -1,0 +1,28 @@
+﻿/*css입력할때 큰 덩어리부터 작은 덩어리로 작성*/
+body {margin:0 auto; padding:0; width:960px;}
+header{background-color:#6ff; position:relative;}
+header h1{margin:0 auto; width:150px; font-size:16px; text-align:center; background-color:#66f; color:#fff; padding:10px 0;} 
+/*margin 0 auto가 되려면 width와 블럭속성이어야한다. html노드와 동일한 순서로 작성한다. */
+header .searchBox{position:absolute; top:30px; right:0;}
+header nav{background-color:#3cf;}
+header nav ul{margin:0 auto; width:525px; padding:10px 0;}
+header nav ul li{display:inline-block; width:100px; text-align:center;} 
+/*text-align은 display inline block, width 가 존재해야 한다.*/
+/*리스트 불릿이 사라짐: li의 기본옵션이 (display-list item)인데 display: inline-block을 넣어주어 불릿이 사라짐
+   주의: 반응형에서는 디스플레이가 줄어들면 같이 줄어야 하는데 리스트가 아래로 떨어진다.
+*/
+header nav ul li a{display:block; text-decoration:none; color:black; transition-duration:0.75s;}
+header nav ul li a:hover{color:white;}
+/*Header finished*/
+
+#wrap{overflow:hidden; margin-bottom:30px;}/*따라오는걸 방지해주기위해 짤라내야함. 캔슬러를 사용한다.*/
+#wrap img{margin:20px 0 50px 0; width:100%; height:100%;}
+#wrap article{width:304px; border:1px solid #999; float:left;}
+#wrap article.latestList2, #wrap article.latestList3{margin-left:20px;} /*부정선택자로 사용 가능*/
+#wrap article h2{font-size:18px; color:#33f;}
+#wrap ul{list-style:none; padding:0;}
+#wrap ul li{font-size:15px; color:#333;}
+#wrap ul li time{font-size:10px; color:black;}
+/*wrap finished*/
+
+footer{background-color:#069; color:white; padding:10px 0; text-align:center;}

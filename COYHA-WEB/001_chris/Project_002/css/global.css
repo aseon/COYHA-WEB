@@ -1,0 +1,233 @@
+﻿body{font-family:'Roboto';}
+
+/*ALL Device - Code Diet*/
+
+
+
+
+@media screen and (max-width:767px){
+    .btn_more{width:120px; display:block; border:1px solid #00e0d0; color:#00e0d0; text-align:center; padding:15px; font-size:16px; font-weight:900;}
+    a{text-decoration:none;}
+    /*글로벌 요소의 내용만 글로벌 css에서 잡아주고 페이지안에서 적용 되어야 할 중앙위치 등은 페이지 css에서 작성*/
+    header{padding:15px 0 70px 0; background:url(../images/bg_01.png) no-repeat left top; background-size:cover;/*꽉 차야 되니까*/}
+    header div{max-width:767px;/*원래 %로 작성해야 한다.*/  position:relative;}
+    
+    header div h1{width:35%; max-width:130px; display:inline-block; vertical-align:top;}
+    header div h1 a{display:block;}
+    header div h1 a img{width:100%;}
+    header div nav{margin-left:15%; display:inline-block; width:50%; vertical-align:top;}
+                /*HamBurGer*/
+    header div nav .mui{display:block; margin-left:auto;}
+    header div nav label.mui{padding:3px 3px 0 3px; border:1px solid white; width:20px; cursor:pointer;}
+            /*최근 박스 자체에  커서포인터가 생성되도록 만드는데 링크가 걸려 있는 속성에는 커서 속성을 넣어준다.*/
+    header div nav label.mui span{border-top:3px solid white; display:block; margin-bottom:3px;}
+    header div nav label.mui + input[type='checkbox']#mnav{display:none;}
+    header div nav label.mui + input[type='checkbox']#mnav:checked+ul{height:300px; padding-top:20px;}
+    header div nav ul{overflow:hidden; height:0; transition-duration:2s;}
+    /*HamBurGer*/
+    header div nav ul li{display:block; margin-bottom:20px; text-align:right;}
+    header div nav ul li a{font-size:13px; font-weight:900; color:white;}/*시안에서 pt가 아닌 px로 적용*/
+    /*font-family는 바디에, font-size 와 weight만 각 태그에 선택 구분 적용*/
+    header div nav ul li a:hover,header div nav ul li a.active{color:#00e0d0;}
+    /*fin Nav*/
+    
+    header div h2{text-align:center; font-size:32px; color:white; font-weight:900; padding:165px 0 20px 0; margin-bottom:30px; background:url(../images/bd_01.png) no-repeat center bottom;}
+    header div p{text-align:center; font-size:14px; color:white; font-weight:400; line-height:24px; padding:0 85px; margin-bottom:55px;}
+    header div > a.btn_more{margin:0 auto 125px auto;}
+    
+    header ol{width:60px; margin:0 auto;} /*width가 있어야 margin: 0 auto; 가 적용*/
+    header ol li{display:inline-block;} /*after 안넣어도 inline-block 정렬됨*/
+    header ol li a{display:block;/*이거 있어야 동그라미 됨*/
+                    text-indent:-9999px; width:10px; height:10px; 
+                    box-sizing:border-box;/*안쓰면 패딩값이 박스에 적용되서 12픽셀 됨*/
+                    border:1px solid white; border-radius:5px;/*border-radius 원형은 width,height의 반값 넣으면 됨*/}
+    header ol li a:hover, header ol li a.active{background-color:#00e0d0; 
+                                                border:#00e0d0;}/*원래 1px solid도 써야 하는데 위에 있는 boder에 적용 된 1px solid가 
+                                        cast cading(상속)으로 적용 된다.(bridge) 혹은 border-color로 써주면 된다.*/
+        /*header Fin*/
+
+   footer{background:url(../images/bg_05.png) no-repeat left top; background-size:cover;}
+   footer section h2{display:none;}
+
+   footer section div{margin:0 5%;}
+
+   footer section div h3{font-size:15px; color:white; font-weight:900; line-height:55px; margin-bottom:25px;}
+   footer section div p,
+   footer section div address span{font-size:14px; line-height:26px; color:white; font-weight:300; font-style:normal;}
+   footer section div address span{display:block; padding-left:30px;}
+   footer section div address span:first-child{background:url(../images/bul_map.png) no-repeat left 2px;}
+   footer section div address span:last-child{background:url(../images/bul_phone.png) no-repeat left center;}
+   footer section div address span a{color:white; display:block; line-height:40px;}
+
+   footer section div:nth-of-type(3){clear:both; margin-bottom:25px;}
+   footer section div:nth-of-type(3) > *{display:inline-block; vertical-align:middle; margin-bottom:25px;}
+   footer section div:nth-of-type(3) h3{display:block;}
+   footer section div input[type='email']{background-color:transparent; padding:15px; border:1px solid #d9d8de; color:#d9d8de; margin-right:5px; font-weight:300;}
+   footer section div input[type='submit']{background:rgba(255,255,255,0.5) url(../images/btn_send.png) no-repeat center center; width:72px; height:47px; border:none; text-indent:-9999px;}
+   
+   footer section div ul li{display:inline-block; margin-left:5px;}
+   footer section div ul li:first-child{margin-left:0;}
+   footer section div ul li a{display:block; width:35px; height:35px; background-repeat:no-repeat; background-size:contain; text-indent:-9999px;}
+   footer section div ul li:first-child a{background-image:url(../images/ico_sns01.png);}/*단독적인 요소를 불러올 땐 지정된 요소의 속성값을 입력한다.*/
+   footer section div ul li:nth-child(2) a{background-image:url(../images/ico_sns02.png);}
+   footer section div ul li:nth-child(3) a{background-image:url(../images/ico_sns03.png);}
+   footer section div ul li:nth-child(4) a{background-image:url(../images/ico_sns04.png);}
+   footer section div ul li:nth-child(5) a{background-image:url(../images/ico_sns05.png);}
+   footer section div ul li:last-child a{background-image:url(../images/ico_sns06.png);}
+   footer section div:last-child{text-align:center;}
+   footer section div:last-child a{font-size:14px; margin-bottom:10px; color:white; display:block;}
+   footer section div:last-child a:first-child{margin-left:0;}
+   footer section div:last-child p{text-align:center; line-height:14px;}
+    /*fin Footer*/
+}
+/*Mobile*/
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .btn_more{width:120px; display:block; border:1px solid #00e0d0; color:#00e0d0; text-align:center; padding:15px; font-size:16px; font-weight:900;}
+    a{text-decoration:none;}
+    /*글로벌 요소의 내용만 글로벌 css에서 잡아주고 페이지안에서 적용 되어야 할 중앙위치 등은 페이지 css에서 작성*/
+    header{padding:15px 0 70px 0; background:url(../images/bg_01.png) no-repeat left top; background-size:cover;/*꽉 차야 되니까*/}
+    header div{max-width:1024px;/*원래 %로 작성해야 한다.*/  position:relative;}
+    header div nav .mui{display:none;}
+    header div h1{width:13%; max-width:130px; display:inline-block; vertical-align:middle;}
+    header div h1 a{display:block;}
+    header div h1 a img{width:100%;}
+    header div nav{margin-left:14%; display:inline-block; width:72%; vertical-align:middle;}
+    header div nav ul li{display:inline-block; margin-left:20px;}
+    header div nav ul li a{font-size:13px; font-weight:900; color:white;}/*시안에서 pt가 아닌 px로 적용*/
+    /*font-family는 바디에, font-size 와 weight만 각 태그에 선택 구분 적용*/
+    header div nav ul li a:hover,header div nav ul li a.active{color:#00e0d0;}
+    /*fin Nav*/
+    
+    header div h2{text-align:center; font-size:32px; color:white; font-weight:900; padding:165px 0 20px 0; margin-bottom:30px; background:url(../images/bd_01.png) no-repeat center bottom;}
+    header div p{text-align:center; font-size:14px; color:white; font-weight:400; line-height:24px; padding:0 85px; margin-bottom:55px;}
+    header div > a.btn_more{margin:0 auto 125px auto;}
+    
+    header ol{width:60px; margin:0 auto;} /*width가 있어야 margin: 0 auto; 가 적용*/
+    header ol li{display:inline-block;} /*after 안넣어도 inline-block 정렬됨*/
+    header ol li a{display:block;/*이거 있어야 동그라미 됨*/
+                    text-indent:-9999px; width:10px; height:10px; 
+                    box-sizing:border-box;/*안쓰면 패딩값이 박스에 적용되서 12픽셀 됨*/
+                    border:1px solid white; border-radius:5px;/*border-radius 원형은 width,height의 반값 넣으면 됨*/}
+    header ol li a:hover, header ol li a.active{background-color:#00e0d0; 
+                                                border:#00e0d0;/*원래 1px solid도 써야 하는데 위에 있는 boder에 적용 된 1px solid가 
+                                                                                      cast cading(상속)으로 적용 된다.(bridge) 혹은 border-color로 써주면 된다.*/}
+    /*fin Header*/
+    
+   footer{background:url(../images/bg_05.png) no-repeat left top; background-size:cover;}
+   footer section h2{display:none;}
+   footer section:after{content:''; display:block; clear:both; visibility:hidden;}
+   footer section div:not(:nth-of-type(3)){width:45%; float:left; margin: 0 0 35px 10%;}
+   footer section div:first-of-type{margin-left:0;}
+   footer section div:first-of-type h3{margin-bottom:30px; line-height:0;}
+   footer section div h3{font-size:15px; color:white; font-weight:900; line-height:55px; margin-bottom:25px;}
+   footer section div p,
+   footer section div address span{font-size:14px; line-height:26px; color:white; font-weight:300; font-style:normal;}
+   footer section div address span{display:block; padding-left:30px;}
+   footer section div address span:first-child{background:url(../images/bul_map.png) no-repeat left 2px;}
+   footer section div address span:last-child{background:url(../images/bul_phone.png) no-repeat left center;}
+   footer section div address span a{color:white; display:block; line-height:40px;}
+
+   footer section div:nth-of-type(3){clear:both; margin-bottom:70px;}
+   footer section div:nth-of-type(3) > *{display:inline-block; vertical-align:middle;}
+   footer section div:nth-of-type(3) h3{margin:0 5% 0 0;}
+   footer section div input[type='email']{background-color:transparent; padding:15px; border:1px solid #d9d8de; color:#d9d8de; margin-right:5px; font-weight:300;}
+   footer section div input[type='submit']{background:rgba(255,255,255,0.5) url(../images/btn_send.png) no-repeat center center; width:72px; height:47px; border:none; text-indent:-9999px;}
+   footer section div ul{padding-top:0; margin-left:5%;}
+   footer section div ul li{display:inline-block; margin-left:5px;}
+   footer section div ul li:first-child{margin-left:0;}
+   footer section div ul li a{display:block; width:35px; height:35px; background-repeat:no-repeat; background-size:contain; text-indent:-9999px;}
+   footer section div ul li:first-child a{background-image:url(../images/ico_sns01.png);}/*단독적인 요소를 불러올 땐 지정된 요소의 속성값을 입력한다.*/
+   footer section div ul li:nth-child(2) a{background-image:url(../images/ico_sns02.png);}
+   footer section div ul li:nth-child(3) a{background-image:url(../images/ico_sns03.png);}
+   footer section div ul li:nth-child(4) a{background-image:url(../images/ico_sns04.png);}
+   footer section div ul li:nth-child(5) a{background-image:url(../images/ico_sns05.png);}
+   footer section div ul li:last-child a{background-image:url(../images/ico_sns06.png);}
+   footer section div:last-child{width:100%; clear:left; margin-left:0; position:relative; padding:0 5%; box-sizing:border-box;}
+   footer section div:last-child a{font-size:14px; margin-left:30px; color:white; display:inline-block;}
+   footer section div:last-child a:first-child{margin-left:0;}
+   footer section div:last-child p{position:absolute; right:5%; top:0; line-height:14px;}
+    /*fin Footer*/
+}
+/*Tablet*/
+@media screen and (min-width:1025px){
+
+    .btn_more{width:120px; display:block; border:1px solid #00e0d0; color:#00e0d0; text-align:center; padding:15px; font-size:16px; font-weight:900;}
+    a{text-decoration:none;}
+    /*글로벌 요소의 내용만 글로벌 css에서 잡아주고 페이지안에서 적용 되어야 할 중앙위치 등은 페이지 css에서 작성*/
+    header{padding:15px 0 70px 0; background:url(../images/bg_01.png) no-repeat left top; background-size:cover;/*꽉 차야 되니까*/}
+    header div{width:940px;/*원래 %로 작성해야 한다.*/ margin:0 auto; position:relative;}
+    header div nav .mui{display:none;}
+    header div h1{width:130px;}
+    header div h1 a{display:block;}
+    header div h1 a img{width:100%;}
+    header div nav{padding-left:130px; position:absolute; right:0; top:20px;}
+    header div nav ul li{display:inline-block; margin-left:20px;}
+    header div nav ul li a{font-size:13px; font-weight:900; color:white;}/*시안에서 pt가 아닌 px로 적용*/
+    /*font-family는 바디에, font-size 와 weight만 각 태그에 선택 구분 적용*/
+    header div nav ul li a:hover,header div nav ul li a.active{color:#00e0d0;}
+    /*fin Nav*/
+    
+    header div h2{text-align:center; font-size:32px; color:white; font-weight:900; padding:165px 0 20px 0; margin-bottom:30px; background:url(../images/bd_01.png) no-repeat center bottom;}
+    header div p{text-align:center; font-size:14px; color:white; font-weight:400; line-height:24px; padding:0 85px; margin-bottom:55px;}
+    header div > a.btn_more{margin:0 auto 125px auto;}
+    
+    header ol{width:60px; margin:0 auto;} /*width가 있어야 margin: 0 auto; 가 적용*/
+    header ol li{display:inline-block;} /*after 안넣어도 inline-block 정렬됨*/
+    header ol li a{display:block;/*이거 있어야 동그라미 됨*/
+                    text-indent:-9999px; width:10px; height:10px; 
+                    box-sizing:border-box;/*안쓰면 패딩값이 박스에 적용되서 12픽셀 됨*/
+                    border:1px solid white; border-radius:5px;/*border-radius 원형은 width,height의 반값 넣으면 됨*/}
+    header ol li a:hover, header ol li a.active{background-color:#00e0d0; 
+                                                border:#00e0d0;/*원래 1px solid도 써야 하는데 위에 있는 boder에 적용 된 1px solid가 
+                                                                                      cast cading(상속)으로 적용 된다.(bridge) 혹은 border-color로 써주면 된다.*/}
+    /*fin Header*/
+    
+    footer{background:url(../images/bg_05.png) no-repeat left top; background-size:cover;}
+    footer section:after{content:''; display:block; visibility:hidden; clear:both;}
+    footer section h2{display:none;}
+    footer section div{width:290px; float:left; margin:0 0 70px 35px;}
+    footer section div:first-of-type{margin-left:0;}
+    footer section div:first-of-type h3{margin-bottom:30px; line-height:0;}
+    footer section div h3{font-size:15px; color:white; font-weight:900; line-height:55px;/*간격맞추려고*/ margin-bottom:25px;}
+    footer section div p, footer section div address span{font-size:14px; line-height:26px; color:white; font-weight:300; font-style:normal;/*address기본 폰트 스타일 기울임 이어서 노멀로*/}
+    footer section div address span{display:block; padding-left:30px;}
+    footer section div address span:first-child{background:url(../images/bul_map.png) no-repeat left 2px;}
+    footer section div address span:last-child{background:url(../images/bul_phone.png) no-repeat left center;}
+    footer section div address span a{color:white; display:block; line-height:40px;}
+    
+    footer section div input[type='email']{background-color:transparent;/*투명*/ padding:15px; border:1px solid #d9d8de; margin-right:5px; font-weight:300; vertical-align:top;}
+    footer section div input[type='submit']{background:rgba(255,255,255,0.5) url(../images/btn_send.png) no-repeat center center; width:72px; height:47px; border:none; text-indent:-9999px;}
+    /*객체가 분리 되어 있을때 margin-bottom을 각각 주어야 하는데 틀어져 버릴 수 있어서 안주는게 좋다. 이때 ul에 margin이나 padding을 이용해야 하는데 margin보다 padding을 주는게 낫다*/
+    footer section div ul{padding-top:25px;}
+    footer section div ul li{display:inline-block;}
+    footer section div ul li a{display:block; width:35px; height:35px; background-repeat:no-repeat; background-size:contain; text-indent:-9999px;}
+    footer section div ul li:first-child a{background-image:url(../images/ico_sns01.png);}/*단독적인 요소를 불러올 땐 지정된 요소의 속성값을 입력한다.*/
+    footer section div ul li:nth-child(2) a{background-image:url(../images/ico_sns02.png);}
+    footer section div ul li:nth-child(3) a{background-image:url(../images/ico_sns03.png);}
+    footer section div ul li:nth-child(4) a{background-image:url(../images/ico_sns04.png);}
+    footer section div ul li:nth-child(5) a{background-image:url(../images/ico_sns05.png);}
+    footer section div ul li:last-child a{background-image:url(../images/ico_sns06.png);}
+    
+    footer section div:last-child{width:100%; clear:left; margin-left:0; position:relative;}/*last -child 위의 것들을 끊어주기 위해 left 입력*/
+    footer section div:last-child a{font-size:14px; margin-left:30px; color:#ffffff; display:inline-block;} /*position은 좋은 방법이 아니다. width 와 margin값을 계산해서 %로 넣는것이 좋다.*/
+    footer section div:last-child a:first-child{margin-left:0;}
+    footer section div:last-child p{position:absolute; right:0; top:0; line-height:14px;}
+    /*fin Footer*/
+    /*in home*/
+    /*
+        footer section div:last-of-type{width:100%; position:relative; padding:13px 0; font-size:14px;}  여기에 clear 넣어줘야 float을 끊어줄 수 있다. 
+         footer section div:last-of-type a{color:white; display:inline-block; margin-left:30px; line-height:26px;}
+         footer section div:last-of-type a:first-child{margin-left:0;}
+         footer section div:last-of-type p{display:inline-block;  position:absolute; right:0; text-transform:capitalize;}
+    */
+}
+/*PC*/
+
+
+
+
+
+
+
+

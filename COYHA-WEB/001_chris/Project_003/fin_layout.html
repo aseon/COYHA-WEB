@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>과제풀이</title>
+    <link href="css/fin_layout.css" rel="stylesheet" />
+</head>
+<body>
+    <!--div(단순한 객체인데 타이틀이 없을때)로 이미지~푸터 전까지
+        이미지는 figure로 하단부는 ul로,  article(h태그,ul),div로 타이틀 부여 후 출력-->
+    <header>
+        <h1>LOGO AREA</h1>
+        <div class="searchBox">
+            <!--형식이나 구조는 없는데 하나의 바구니로 움직여야할 때-->
+            <input type="search" id="searchBar" value="검색어를 입력하세요" title="검색어를 입력하세요" name="input_search" />
+            <input type="button" value="검색" for="searchBar" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrap">
+        <img src="img/attraction.jpg" alt="지정되지않음" />
+        <article class="latestList1">
+            <h2>latestBoard1</h2>
+            <ul>
+                <li>content1<time datetime="2016-05-20">2016.05.20</time></li>
+                <li>content2<time datetime="2016-05-20">2016.05.20</time></li>
+                <li>content3<time datetime="2016-05-20">2016.05.20</time></li>
+            </ul>
+        </article>
+        <article class="latestList2">
+    <h2>latestBoard2</h2>
+    <ul>
+        <li>content1<time datetime="2016-05-20">2016.05.20</time></li>
+        <li>content2<time datetime="2016-05-20">2016.05.20</time></li>
+        <li>content3<time datetime="2016-05-20">2016.05.20</time></li>
+    </ul>
+        </article>
+        <article class="latestList3">
+            <h2>latestBoard3</h2>
+            <ul>
+                <li>content1<time datetime="2016-05-20">2016.05.20</time></li>
+                <li>content2<time datetime="2016-05-20">2016.05.20</time></li>
+                <li>content3<time datetime="2016-05-20">2016.05.20</time></li>
+            </ul>
+        </article>
+    </div>
+    <footer>footer Area</footer>
+</body>
+</html>

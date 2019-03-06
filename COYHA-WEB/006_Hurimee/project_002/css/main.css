@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* header */
+body{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    position: relative;
+}
+
+ /* header-logo */
+.header .logo{
+    width: 100%;
+    height: 41px;
+    background: #66ffff;
+    text-align: center;
+}
+.header .logo span{
+    display: inline-block;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 41px;
+    padding: 0 28px;
+    background: #6666ff;
+}
+
+ /* header-nav */
+.header .nav{
+    width: 100%;
+}
+.header .nav .gnb{
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    background: #33ccff;
+    text-align: center;
+}
+.header .nav .gnb li{
+    display: inline-block;
+    margin-right: 57px;
+}
+.header .nav .gnb li:last-child{
+    margin-right: 0;
+}
+.header .nav .gnb li a{
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    transition: all 0.75s;
+}
+.header .nav .gnb li a:hover{
+    color: #fff;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    transition: all 0.75s;
+}
+
+ /* header-search */
+.header .search{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.header .search input{
+    width: 175px;
+    height: 21px;
+    vertical-align: bottom;
+}
+.header .search button{
+    width: 43px;
+    height: 24px;
+    vertical-align: bottom;
+}
+
+
+/* main-section */
+ /* main-image */
+.main-section .main-image{
+    width: 100%;
+    height: 402px;
+}
+.main-section .main-image img{
+    width: 100%;
+}
+
+ /* main-board */
+.main-section .main-board{
+    width: 100%;
+}
+.main-section .main-board .board{
+    display: inline-block;
+    width: 306px;
+    height: 133px;
+    border: 1px solid #999999;
+    margin-right: 18px;
+    padding: 21px 0;
+    box-sizing: border-box;
+}
+.main-section .main-board .board:last-child{
+    margin-right: 0;
+}
+.main-section .main-board .board h2{
+    font-size: 13px;
+    color: #3333ff;
+    padding-bottom: 25px;
+}
+.main-section .main-board .board ul li{
+    padding-bottom: 9px;
+}
+.main-section .main-board .board ul li a{
+    display: inline-block;
+    font-size: 11px;
+}
+.main-section .main-board .board ul li a time{
+    font-size: 7px;
+}
+
+
+/* footer */
+.footer p{
+    width: 100%;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    color: #fff;
+    background: #006699;
+}
