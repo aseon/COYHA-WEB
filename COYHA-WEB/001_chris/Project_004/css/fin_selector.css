@@ -1,0 +1,44 @@
+﻿body{margin:0 auto; width:70%;}
+ul{font-family:Arial; padding:0; display:block; list-style:none;}
+ul li{display:block; cursor:pointer; overflow:hidden;}
+/*  li 기본속성  display: list-item; (그래서 불릿이 생기는것)*/
+
+ul li:first-child{border-bottom:1px solid #e1e1e1; background-color:#f9f9f9;}
+ul li:last-child{border-bottom:1px solid #e1e1e1;}
+ul li:nth-child(odd){background-color:#e9e9e9;}
+ul li:nth-child(even):hover{background-color:#b5b2ff;}
+ul li:nth-child(2n+3):hover{background-color:#aee1ff;}/*캔슬러 2n+3=3,5,7,9*/
+ul li:nth-child(2n+3):hover span, ul  li:nth-child(even):hover span{color:#555;}
+ul li span{display:block; float:left; font-size:14px; text-transform:capitalize; color:#999; 
+           padding:15px 2%;/*내가 안했던 부분 좌우는 퍼센테이지로 줘서 바디의 최대 width와 적용되서 최소한의 반응형 구현*/ 
+           box-sizing:border-box;/*기존위치(복대)는 그대로 있는데 안의 객체들(뱃살)을 강제로 안으로 밀어 넣는것(복대같은 효과)*/}
+
+ul li:first-child span:nth-child(2){color:#30f;}
+ul li span:nth-child(2n+1){width:15%;} /*odd넣어도 되지만 적용되야하는 부분이 적어서 수열로 짜는게 좋다.*/
+ul li span:nth-child(2){width:40%; color:#0cf;}
+ul li span:last-child{width:10%;} /*텍스트가 뚫고 나오는것을 방지하기 위해 width100% 의 90~94, 95%만(유동폭을 준다.) 사용한다. */
+/*          --------★★★★★★★★★★★★★★★----------
+    span 내에 있는 textdata가 줄바꿈이 될시에. 패딩이 적용되어있는 공간이라면, 줄바꿈이 되기전에 패딩으로 인식되어있는
+    여백이 이미 width의 줄어드는 수치와 합산되어 연산되기 때문에 글자가 뚫고 나오거나 overflow:hidden 일 경우엔 사라지는 현상이 나타남.
+    그렇기 때문에 약 5%(%단위기준)의 여분의 여백을 남겨두는 것이 좋음.
+    p.s. 미디어쿼리를 사용하지 않을 경우에만 (pc모양 레이아웃)
+*/
+ul li:nth-child(2n+3) span:nth-child(2):hover{color:#30f;}
+
+/*pager*/
+.pager{position:relative; padding:0 1.5% 0 3%; width:33%; margin:0 auto 15px auto;}
+.pager a{text-decoration:none; color:#555; display:block; text-align:center;}
+.pager > a{position:absolute;}
+.pager > a:first-of-type{left:0; top:0;}
+.pager > a:last-of-type{right:0; top:0;}
+.pager ol{display:block; margin:0; padding:0; list-style:none;}
+.pager ol li{text-align:center; font-size:13px; display:inline-block; width:7.5%;}
+/*display: inline-block 과 %를 혼용할 경우 0.5~1%로 대부분 보정 할 수 있다.(안될때 차값을 좀 더 높이면 됌*/
+/*인디케이터와 페이지의 간격이 너무 좁지 않도록 조절하기 위해서*/
+.pager ol li a:hover{background-color:#0cf; color:black; border-radius:5px; transition-duration:1s;}
+
+/*form*/
+fieldset{border:none; padding:0; margin:0; text-align:center;}
+fieldset input[type='search']{border:1px solid #e1e1e1;}
+fieldset input[type='search']:focus{border:1px dotted #0cf;}
+fieldset input[type='button']{border:1px solid #0094ff; border-color:#e9e9e9; text-transform:uppercase; color:#333;}
