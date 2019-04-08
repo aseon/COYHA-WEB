@@ -106,7 +106,7 @@ main root
 - [Sunny](https://github.com/sunny5820)  
 - [Gangjun-Lee](https://github.com/loveLinux06)  
 - [후리미](https://github.com/gnejfekfr)  
-
+- [이작가](https://github.com/aseon)
 
 ## 6. 함께하시는 분 (참여날짜)
 19.01.23   
@@ -116,7 +116,10 @@ Chris, BrokenStar, Sunny, Looksh, 가자미, 후리미, 아옳, lovelyElla, Sung
 박진현   
 
 19.02.07  
-왕회장  
+왕회장   
+
+19.04.02
+이작가  
 
 총원: 13명
 
